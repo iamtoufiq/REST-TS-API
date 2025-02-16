@@ -1,11 +1,23 @@
 {
     "compilerOptions": {
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "baseUrl": "src",
-        "outDir": "dist",
-        "sourceMap": true,
-        "noImplicitAny": true,
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "target": "ES2022",
+      "rootDir": "src",
+      "outDir": "dist",
+      "baseUrl": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "paths": {
+        "db/*": ["db/*"],
+        "helpers/*": ["helpers/*"],
+        "controllers/*": ["controllers/*"]
+      }
     },
-    "include": ["src/**/*"]
-}
+    "include": ["src"]
+  }
+  
